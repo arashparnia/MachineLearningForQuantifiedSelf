@@ -1,0 +1,2 @@
+# MachineLearningForQuantifiedSelf
+MachineLearningForQuantifiedSelf Class VU Amsterdam
