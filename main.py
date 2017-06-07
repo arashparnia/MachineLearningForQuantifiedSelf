@@ -16,9 +16,9 @@
 # import matplotlib.pyplot as plt
 # import rpy2.robjects as robjects
 # # import pandas.rpy.common as com
-# import pandas as pd
+import pandas as pd
 # import numpy as np
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 # import seaborn as sns
 # import sklearn.cluster as cluster
 # import time
@@ -34,15 +34,20 @@
 
 print("main")
 
-# data = pd.read_csv('../Data/csv-participant-one/accelerometer_phone.csv')
+data = pd.read_csv('../Data/mobile/2017-06-07_11-17-35_+0200.csv')
 # # data = pd.read_csv('../Data/csv-participant-one/accelerometer_phone.csv',nrows = 1000)
-# print(data.head())
-# plt.hist(data['x'])
+print(data.head())
+print(list(data))
+plt.hist(data['accelerometerAccelerationX(G)'])
 # plt.hist(data['y'])
 # plt.hist(data['z'])
-# # plt.scatter(data['y'], data['z'])
-# plt.show()
+# plt.scatter(data['y'], data['z'])
+plt.show()
 
-import PythonCode.Chapter2.CreateDataset
-db= PythonCode.Chapter2.CreateDataset.CreateDataset('../Data/csv-participant-one',0)
-print(db)
+# import PythonCode.Chapter2.CreateDataset
+# db= PythonCode.Chapter2.CreateDataset.CreateDataset('../Data/csv-participant-one',0)
+
+
+
+# import PythonCode.util.VisualizeDataset
+# PythonCode.util.VisualizeDataset.VisualizeDataset.plot_dataset(data,'x')
