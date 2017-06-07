@@ -7,21 +7,16 @@
 #                                                            #
 ##############################################################
 
-from util.VisualizeDataset import VisualizeDataset
-from Chapter7.PrepareDatasetForLearning import PrepareDatasetForLearning
-from Chapter7.Evaluation import RegressionEvaluation
-from Chapter8.LearningAlgorithmsTemporal import TemporalClassificationAlgorithms
-from Chapter8.LearningAlgorithmsTemporal import TemporalRegressionAlgorithms
-from statsmodels.tsa.stattools import adfuller
-from pandas.tools.plotting import autocorrelation_plot
-
-import copy
-import pandas as pd
-from util import util
 import matplotlib.pyplot as plot
-import numpy as np
-from sklearn.model_selection import train_test_split
+import pandas as pd
+from pandas.tools.plotting import autocorrelation_plot
+from statsmodels.tsa.stattools import adfuller
 
+from Chapter7.Evaluation import RegressionEvaluation
+from Chapter7.PrepareDatasetForLearning import PrepareDatasetForLearning
+from Chapter8.LearningAlgorithmsTemporal import TemporalRegressionAlgorithms
+from util import util
+from util.VisualizeDataset import VisualizeDataset
 
 # Of course we repeat some stuff from Chapter 3, namely to load the dataset
 

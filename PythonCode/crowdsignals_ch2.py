@@ -13,12 +13,12 @@ result_dataset_path = './intermediate_datafiles/'
 
 # Import the relevant classes.
 
-from Chapter2.CreateDataset import CreateDataset
-from util.VisualizeDataset import VisualizeDataset
-from util import util
 import copy
 import os
 
+from Chapter2.CreateDataset import CreateDataset
+from util import util
+from util.VisualizeDataset import VisualizeDataset
 
 if not os.path.exists(result_dataset_path):
     print('Creating result directory: ' + result_dataset_path)

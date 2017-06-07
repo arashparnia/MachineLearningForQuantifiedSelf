@@ -2,8 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0be935c6-011a-4bb1-b00c-0747a6f8b391" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter2/CreateDataset.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter2/CreateDataset.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter2/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter2/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter3/DataTransformation.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter3/DataTransformation.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter3/ImputationMissingValues.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter3/ImputationMissingValues.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter3/KalmanFilters.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter3/KalmanFilters.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter3/OutlierDetection.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter3/OutlierDetection.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter3/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter3/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter4/FrequencyAbstraction.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter4/FrequencyAbstraction.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter4/TemporalAbstraction.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter4/TemporalAbstraction.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter4/TextAbstraction.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter4/TextAbstraction.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter4/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter4/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter5/Clustering.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter5/Clustering.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter5/DistanceMetrics.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter5/DistanceMetrics.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter5/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter5/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter7/Evaluation.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/Evaluation.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter7/FeatureSelection.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter7/LearningAlgorithms.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/LearningAlgorithms.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter7/PrepareDatasetForLearning.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter7/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter8/LearningAlgorithmsTemporal.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter8/LearningAlgorithmsTemporal.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter8/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter8/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter8/dynsys/Evaluator.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter8/dynsys/Evaluator.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter8/dynsys/Model.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter8/dynsys/Model.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter8/dynsys/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter8/dynsys/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/ch3_visualization.py" afterPath="$PROJECT_DIR$/PythonCode/ch3_visualization.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/ch4_visualization.py" afterPath="$PROJECT_DIR$/PythonCode/ch4_visualization.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/ch5_visualization.py" afterPath="$PROJECT_DIR$/PythonCode/ch5_visualization.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/ch6_visualization.py" afterPath="$PROJECT_DIR$/PythonCode/ch6_visualization.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/ch7_visualization.py" afterPath="$PROJECT_DIR$/PythonCode/ch7_visualization.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/ch8_visualization.py" afterPath="$PROJECT_DIR$/PythonCode/ch8_visualization.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch2.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch3_outliers.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch3_rest.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch4.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch5.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch7_classification.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch7_regression.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_regression.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/crowdsignals_ch8_regression.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/util/VisualizeDataset.py" afterPath="$PROJECT_DIR$/PythonCode/util/VisualizeDataset.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/util/__init__.py" afterPath="$PROJECT_DIR$/PythonCode/util/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ML4QS-master/PythonCode/util/util.py" afterPath="$PROJECT_DIR$/PythonCode/util/util.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MachineLearningForQuantifiedSelf.iml" afterPath="$PROJECT_DIR$/.idea/MachineLearningForQuantifiedSelf.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,17 +65,31 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="540">
+              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CreateDataset.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter2/CreateDataset.py">
+        <entry file="file://$PROJECT_DIR$/PythonCode/Chapter2/CreateDataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-947">
+            <state relative-caret-position="300">
+              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding>
+                <element signature="e#505#524#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/Chapter2/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -60,6 +117,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/PythonCode/Chapter2/CreateDataset.py" />
       </list>
     </option>
   </component>
@@ -104,20 +162,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MachineLearningForQuantifiedSelf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MachineLearningForQuantifiedSelf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML4QS-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -127,6 +171,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -336,7 +385,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24847375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24847375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -376,23 +425,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="540">
+          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML4QS-master/PythonCode/Chapter2/CreateDataset.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter2/CreateDataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-947">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="e#505#524#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

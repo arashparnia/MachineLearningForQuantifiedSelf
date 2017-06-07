@@ -7,17 +7,15 @@
 #                                                            #
 ##############################################################
 
-from util.VisualizeDataset import VisualizeDataset
-from Chapter5.DistanceMetrics import InstanceDistanceMetrics
-from Chapter5.DistanceMetrics import PersonDistanceMetricsNoOrdering
-from Chapter5.DistanceMetrics import PersonDistanceMetricsOrdering
-from Chapter5.Clustering import NonHierarchicalClustering
-from Chapter5.Clustering import HierarchicalClustering
 import copy
-import pandas as pd
-import matplotlib.pyplot as plot
-import util.util as util
 
+import matplotlib.pyplot as plot
+import pandas as pd
+
+import util.util as util
+from Chapter5.Clustering import HierarchicalClustering
+from Chapter5.Clustering import NonHierarchicalClustering
+from util.VisualizeDataset import VisualizeDataset
 
 # Of course we repeat some stuff from Chapter 3, namely to load the dataset
 

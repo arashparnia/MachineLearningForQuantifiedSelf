@@ -18,7 +18,7 @@ import matplotlib.dates as md
 
 class CreateDataset():
 
-    base_dir = ''
+    base_dir = '../Data/csv-participant-one'
     granulairity = 0
     data_table = None
 

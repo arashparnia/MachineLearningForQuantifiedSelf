@@ -28,13 +28,20 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
+
+
+
+
 print("main")
 
-data = pd.read_csv('../Data/csv-participant-one/accelerometer_phone.csv')
-# data = pd.read_csv('../Data/csv-participant-one/accelerometer_phone.csv',nrows = 1000)
-print(data.head())
-plt.hist(data['x'])
-plt.hist(data['y'])
-plt.hist(data['z'])
-# plt.scatter(data['y'], data['z'])
-plt.show()
+# data = pd.read_csv('../Data/csv-participant-one/accelerometer_phone.csv')
+# # data = pd.read_csv('../Data/csv-participant-one/accelerometer_phone.csv',nrows = 1000)
+# print(data.head())
+# plt.hist(data['x'])
+# plt.hist(data['y'])
+# plt.hist(data['z'])
+# # plt.scatter(data['y'], data['z'])
+# plt.show()
+
+import PythonCode.Chapter2.CreateDataset
+PythonCode.CreateDataset()
