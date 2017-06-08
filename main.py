@@ -41,6 +41,22 @@ from PythonCode.util.VisualizeDataset import VisualizeDataset
 print("main")
 
 # data = pd.read_csv('../Data/mobile/2017-06-07_11-17-35_+0200.csv')
+#
+# data = data.rename(columns={'motionMagneticFieldX(\xc2\xb5T)': 'motionMagneticFieldX'})
+# data = data.rename(columns={'motionMagneticFieldY(\xc2\xb5T)': 'motionMagneticFieldY'})
+# data = data.rename(columns={'motionMagneticFieldZ(\xc2\xb5T)': 'motionMagneticFieldZ'})
+#
+# data.to_csv('../Data/mobile/2017-06-07_11-17-35_+0200.csv')
+#
+# exit(0)
+
+
+### STATES
+# STATE 1 = sitting
+# STATE 2 = walking
+
+
+
 # # data = pd.read_csv('../Data/csv-participant-one/accelerometer_phone.csv',nrows = 1000)
 # print(data.head())
 # print(list(data))
@@ -73,7 +89,7 @@ if not os.path.exists(result_dataset_path):
 # coarse grained, namely one measurement per minute, and secondly use four measurements
 # per second
 
-granularities = [10,100,1000,10000]
+granularities = [60000, 250]
 datasets = []
 
 # ['loggingTime(txt)', 'loggingSample(N)', 'identifierForVendor(txt)', 'deviceID(txt)',
@@ -115,8 +131,9 @@ for milliseconds_per_instance in granularities:
 
     # DataSet.add_event_dataset('2017-06-07_11-17-35_+0200.csv', 'label_start', 'label_end', 'label', 'binary')
 
-    # DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'locationTimestamp_since1970(s)',
-    #                               ['motionMagneticFieldX(\xc2\xb5T)', 'motionMagneticFieldY(\xc2\xb5T)', 'motionMagneticFieldZ(\xc2\xb5T)'], 'avg', 'mag_phone_')
+    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'loggingTime(txt)',
+                                  ['motionMagneticFieldX', 'motionMagneticFieldY', 'motionMagneticFieldZ'], 'avg', 'mag_phone_')
+
 
     DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv',
                                   'loggingTime(txt)', ['altimeterPressure(kPa)'],
@@ -130,7 +147,7 @@ for milliseconds_per_instance in granularities:
 
     # Boxplot
     # DataViz.plot_dataset_boxplot(dataset, ['acc_phone_x','acc_phone_y','acc_phone_z','acc_watch_x','acc_watch_y','acc_watch_z'])
-    DataViz.plot_dataset_boxplot(dataset, ['acc_phone_accelerometerAccelerationX(G)', 'acc_phone_accelerometerAccelerationY(G)', 'acc_phone_accelerometerAccelerationZ(G)'])
+    # DataViz.plot_dataset_boxplot(dataset, ['acc_phone_accelerometerAccelerationX(G)', 'acc_phone_accelerometerAccelerationY(G)', 'acc_phone_accelerometerAccelerationZ(G)'])
 
     # print(dataset)
     # Plot all data
@@ -138,18 +155,18 @@ for milliseconds_per_instance in granularities:
     # ['acc_', 'gyr_', 'hr_watch_rate', 'light_phone_lux', 'mag_', 'press_phone_', 'label'],
     # ['like', 'like', 'like', 'like', 'like', 'like', 'like','like'],
     # ['line', 'line', 'line', 'line', 'line', 'line', 'points', 'points'])
-    DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'press_phone_'],
-                         ['like', 'like', 'like', 'like'],
-                         ['line', 'line', 'line', 'line'])
+    DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'mag_phone_', 'press_phone_'],
+                         ['like', 'like', 'like', 'like', 'like'],
+                         ['line', 'line', 'line', 'line', 'like'])
 
     # And print a summary of the dataset
 
-    # util.print_statistics(dataset)
-    # datasets.append(copy.deepcopy(dataset))
+    util.print_statistics(dataset)
+    datasets.append(copy.deepcopy(dataset))
 
 # And print the table that has been included in the book
 
-# util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
+util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
 
 # Finally, store the last dataset we have generated (250 ms).
-# dataset.to_csv(result_dataset_path + 'chapter2_result.csv')
+dataset.to_csv(result_dataset_path + 'chapter2_result.csv')
