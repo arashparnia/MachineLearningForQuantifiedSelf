@@ -73,7 +73,7 @@ if not os.path.exists(result_dataset_path):
 # coarse grained, namely one measurement per minute, and secondly use four measurements
 # per second
 
-granularities = [60000, 250]
+granularities = [10,100,1000,10000]
 datasets = []
 
 # ['loggingTime(txt)', 'loggingSample(N)', 'identifierForVendor(txt)', 'deviceID(txt)',
@@ -99,15 +99,16 @@ datasets = []
 
 
 for milliseconds_per_instance in granularities:
+    print (milliseconds_per_instance)
     # Create an initial dataset object with the base directory for our data and a granularity
     DataSet = CreateDataset(dataset_path, milliseconds_per_instance)
 
     # Add the selected measurements to it.
-    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'locationTimestamp_since1970(s)',
+    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'loggingTime(txt)',
                                   ['accelerometerAccelerationX(G)', 'accelerometerAccelerationY(G)', 'accelerometerAccelerationZ(G)'],
                                   'avg', 'acc_phone_')
 
-    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'locationTimestamp_since1970(s)',
+    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'loggingTime(txt)',
                                   ['gyroRotationX(rad/s)', 'gyroRotationY(rad/s)', 'gyroRotationZ(rad/s)'],
                                   'avg',
                                   'gyr_phone_')
@@ -118,7 +119,7 @@ for milliseconds_per_instance in granularities:
     #                               ['motionMagneticFieldX(\xc2\xb5T)', 'motionMagneticFieldY(\xc2\xb5T)', 'motionMagneticFieldZ(\xc2\xb5T)'], 'avg', 'mag_phone_')
 
     DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv',
-                                  'locationTimestamp_since1970(s)', ['altimeterPressure(kPa)'],
+                                  'loggingTime(txt)', ['altimeterPressure(kPa)'],
                                   'avg', 'press_phone_')
 
     dataset = DataSet.data_table
@@ -137,18 +138,18 @@ for milliseconds_per_instance in granularities:
     # ['acc_', 'gyr_', 'hr_watch_rate', 'light_phone_lux', 'mag_', 'press_phone_', 'label'],
     # ['like', 'like', 'like', 'like', 'like', 'like', 'like','like'],
     # ['line', 'line', 'line', 'line', 'line', 'line', 'points', 'points'])
-    # DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'press_phone_'],
-    #                      ['like', 'like', 'like', 'like'],
-    #                      ['line', 'line', 'line', 'line'])
+    DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'press_phone_'],
+                         ['like', 'like', 'like', 'like'],
+                         ['line', 'line', 'line', 'line'])
 
     # And print a summary of the dataset
 
     # util.print_statistics(dataset)
-    datasets.append(copy.deepcopy(dataset))
+    # datasets.append(copy.deepcopy(dataset))
 
 # And print the table that has been included in the book
 
-util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
+# util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
 
 # Finally, store the last dataset we have generated (250 ms).
 # dataset.to_csv(result_dataset_path + 'chapter2_result.csv')
