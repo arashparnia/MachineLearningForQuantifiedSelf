@@ -67,7 +67,7 @@ for milliseconds_per_instance in granularities:
     # # We add the labels provided by the users. These are categorical events that might overlap. We add them
     # # as binary attributes (i.e. add a one to the attribute representing the specific value for the label if it
     # # occurs within an interval).
-    # DataSet.add_event_dataset('labels.csv', 'label_start', 'label_end', 'label', 'binary')
+    DataSet.add_event_dataset('labels.csv', 'label_start', 'label_end', 'label', 'binary')
     #
     # # We add the amount of light sensed by the phone (continuous numerical measurements) and aggregate by averaging again
     # DataSet.add_numerical_dataset('light_phone.csv', 'timestamps', ['lux'], 'avg', 'light_phone_')
@@ -83,6 +83,9 @@ for milliseconds_per_instance in granularities:
     # Get the resulting pandas data table
 
     dataset = DataSet.data_table
+    dataset = dataset.loc[dataset['labelSitting'] == 1]
+    # print df.head()
+    # exit(0)
 
     # Plot the data
 
@@ -98,6 +101,7 @@ for milliseconds_per_instance in granularities:
     # DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'hr_watch_rate', 'light_phone_lux', 'mag_', 'press_phone_', 'label'],
     #                      ['like', 'like', 'like', 'like', 'like', 'like', 'like','like'],
     #                      ['line', 'line', 'line', 'line', 'line', 'line', 'points', 'points'])
+
     DataViz.plot_dataset(dataset, ['acc_', 'gyr_',  'mag_','press_phone_',],
                          ['like', 'like', 'like', 'like', 'like'],
                          ['line', 'line', 'line', 'line', 'like'])
@@ -105,11 +109,11 @@ for milliseconds_per_instance in granularities:
     # And print a summary of the dataset
 
     # util.print_statistics(dataset)
-    datasets.append(copy.deepcopy(dataset))
+    # datasets.append(copy.deepcopy(dataset))
 
 # And print the table that has been included in the book
 
-util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
+# util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
 
 # Finally, store the last dataset we have generated (250 ms).
-dataset.to_csv(result_dataset_path + 'chapter2_result.csv')
+# dataset.to_csv(result_dataset_path + 'chapter2_result.csv')

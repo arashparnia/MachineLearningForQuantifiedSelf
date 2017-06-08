@@ -40,20 +40,25 @@ from PythonCode.util.VisualizeDataset import VisualizeDataset
 
 print("main")
 
-# data = pd.read_csv('../Data/mobile/2017-06-07_11-17-35_+0200.csv')
+myfile = '2017-06-08_14-29-43_+0200.csv'
+thefile = 'mydata.csv'
+
+
+data = pd.read_csv('../Data/mobile/' + myfile)
 #
-# data = data.rename(columns={'motionMagneticFieldX(\xc2\xb5T)': 'motionMagneticFieldX'})
-# data = data.rename(columns={'motionMagneticFieldY(\xc2\xb5T)': 'motionMagneticFieldY'})
-# data = data.rename(columns={'motionMagneticFieldZ(\xc2\xb5T)': 'motionMagneticFieldZ'})
-#
-# data.to_csv('../Data/mobile/2017-06-07_11-17-35_+0200.csv')
-#
-# exit(0)
+data = data.rename(columns={'motionMagneticFieldX(\xc2\xb5T)': 'motionMagneticFieldX'})
+data = data.rename(columns={'motionMagneticFieldY(\xc2\xb5T)': 'motionMagneticFieldY'})
+data = data.rename(columns={'motionMagneticFieldZ(\xc2\xb5T)': 'motionMagneticFieldZ'})
+
+data.to_csv('../Data/mobile/' + thefile)
+
+
 
 
 ### STATES
 # STATE 1 = sitting
 # STATE 2 = walking
+# STATE 3 = stairs
 
 
 
@@ -79,6 +84,7 @@ dataset_path = '../Data/mobile/'
 result_dataset_path = './intermediate_datafiles/'
 
 
+
 if not os.path.exists(result_dataset_path):
     print('Creating result directory: ' + result_dataset_path)
     os.makedirs(result_dataset_path)
@@ -89,7 +95,7 @@ if not os.path.exists(result_dataset_path):
 # coarse grained, namely one measurement per minute, and secondly use four measurements
 # per second
 
-granularities = [60000, 250]
+granularities = [60000]
 datasets = []
 
 # ['loggingTime(txt)', 'loggingSample(N)', 'identifierForVendor(txt)', 'deviceID(txt)',
@@ -120,22 +126,22 @@ for milliseconds_per_instance in granularities:
     DataSet = CreateDataset(dataset_path, milliseconds_per_instance)
 
     # Add the selected measurements to it.
-    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'loggingTime(txt)',
+    DataSet.add_numerical_dataset(thefile, 'loggingTime(txt)',
                                   ['accelerometerAccelerationX(G)', 'accelerometerAccelerationY(G)', 'accelerometerAccelerationZ(G)'],
                                   'avg', 'acc_phone_')
 
-    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'loggingTime(txt)',
+    DataSet.add_numerical_dataset(thefile, 'loggingTime(txt)',
                                   ['gyroRotationX(rad/s)', 'gyroRotationY(rad/s)', 'gyroRotationZ(rad/s)'],
                                   'avg',
                                   'gyr_phone_')
 
     # DataSet.add_event_dataset('2017-06-07_11-17-35_+0200.csv', 'label_start', 'label_end', 'label', 'binary')
 
-    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv', 'loggingTime(txt)',
+    DataSet.add_numerical_dataset(thefile, 'loggingTime(txt)',
                                   ['motionMagneticFieldX', 'motionMagneticFieldY', 'motionMagneticFieldZ'], 'avg', 'mag_phone_')
 
 
-    DataSet.add_numerical_dataset('2017-06-07_11-17-35_+0200.csv',
+    DataSet.add_numerical_dataset(thefile,
                                   'loggingTime(txt)', ['altimeterPressure(kPa)'],
                                   'avg', 'press_phone_')
 
@@ -161,12 +167,12 @@ for milliseconds_per_instance in granularities:
 
     # And print a summary of the dataset
 
-    util.print_statistics(dataset)
-    datasets.append(copy.deepcopy(dataset))
+    # util.print_statistics(dataset)
+    # datasets.append(copy.deepcopy(dataset))
 
 # And print the table that has been included in the book
 
-util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
+# util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
 
 # Finally, store the last dataset we have generated (250 ms).
-dataset.to_csv(result_dataset_path + 'chapter2_result.csv')
+# dataset.to_csv(result_dataset_path + 'chapter2_result.csv')
