@@ -30,7 +30,7 @@ if not os.path.exists(result_dataset_path):
 # coarse grained, namely one measurement per minute, and secondly use four measurements
 # per second
 
-granularities = [60000, 250]
+granularities = [250]
 datasets = []
 
 # ['loggingTime(txt)', 'loggingSample(N)', 'identifierForVendor(txt)', 'deviceID(txt)', 'locationTimestamp_since1970(s)', 'locationLatitude(WGS84)', 'locationLongitude(WGS84)', 'locationAltitude(m)', 'locationSpeed(m/s)', 'locationCourse(\xc2\xb0)', 'locationVerticalAccuracy(m)', 'locationHorizontalAccuracy(m)', 'locationFloor(Z)', 'locationHeadingTimestamp_since1970(s)', 'locationHeadingX(\xc2\xb5T)', 'locationHeadingY(\xc2\xb5T)', 'locationHeadingZ(\xc2\xb5T)', 'locationTrueHeading(\xc2\xb0)', 'locationMagneticHeading(\xc2\xb0)', 'locationHeadingAccuracy(\xc2\xb0)', 'accelerometerTimestamp_sinceReboot(s)', 'accelerometerAccelerationX(G)', 'accelerometerAccelerationY(G)', 'accelerometerAccelerationZ(G)', 'gyroTimestamp_sinceReboot(s)', 'gyroRotationX(rad/s)', 'gyroRotationY(rad/s)', 'gyroRotationZ(rad/s)', 'motionTimestamp_sinceReboot(s)', 'motionYaw(rad)', 'motionRoll(rad)', 'motionPitch(rad)', 'motionRotationRateX(rad/s)', 'motionRotationRateY(rad/s)', 'motionRotationRateZ(rad/s)', 'motionUserAccelerationX(G)', 'motionUserAccelerationY(G)', 'motionUserAccelerationZ(G)', 'motionAttitudeReferenceFrame(txt)', 'motionQuaternionX(R)', 'motionQuaternionY(R)', 'motionQuaternionZ(R)', 'motionQuaternionW(R)', 'motionGravityX(G)', 'motionGravityY(G)', 'motionGravityZ(G)', 'motionMagneticFieldX(\xc2\xb5T)', 'motionMagneticFieldY(\xc2\xb5T)', 'motionMagneticFieldZ(\xc2\xb5T)', 'motionMagneticFieldCalibrationAccuracy(Z)', 'activityTimestamp_sinceReboot(s)', 'activity(txt)', 'activityActivityConfidence(Z)', 'activityActivityStartDate(txt)', 'pedometerStartDate(txt)', 'pedometerNumberofSteps(N)', 'pedometerDistance(m)', 'pedometerFloorAscended(N)', 'pedometerFloorDescended(N)', 'pedometerEndDate(txt)', 'altimeterTimestamp_sinceReboot(s)', 'altimeterReset(bool)', 'altimeterRelativeAltitude(m)', 'altimeterPressure(kPa)', 'IP_en0(txt)', 'IP_pdp_ip0(txt)', 'deviceOrientation(Z)', 'batteryState(R)', 'batteryLevel(Z)', 'avAudioRecorderPeakPower(dB)', 'avAudioRecorderAveragePower(dB)', 'state(N)']
@@ -74,7 +74,7 @@ for milliseconds_per_instance in granularities:
     #
     # # We add the magnetometer data (continuous numerical measurements) of the phone and the smartwatch
     # # and aggregate the values per timestep by averaging the values
-    # DataSet.add_numerical_dataset('magnetometer_phone.csv', 'timestamps', ['x','y','z'], 'avg', 'mag_phone_')
+    DataSet.add_numerical_dataset('magnetometer_phone.csv', 'timestamps', ['x','y','z'], 'avg', 'mag_phone_')
     # DataSet.add_numerical_dataset('magnetometer_smartwatch.csv', 'timestamps', ['x','y','z'], 'avg', 'mag_watch_')
     #
     # # We add the pressure sensed by the phone (continuous numerical measurements) and aggregate by averaging again
