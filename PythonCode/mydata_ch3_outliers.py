@@ -24,11 +24,11 @@
 #                                                            #
 ##############################################################
 
-import PythonCode
+
 from util.VisualizeDataset import VisualizeDataset
 from Chapter3.OutlierDetection import DistributionBasedOutlierDetection
 from Chapter3.OutlierDetection import DistanceBasedOutlierDetection
-import copy
+
 import pandas as pd
 import numpy as np
 
@@ -46,12 +46,18 @@ except IOError as e:
 dataset.index = dataset.index.to_datetime()
 
 # Compute the number of milliseconds covered by an instance based on the first two rows
+
 milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds / 1000
 
 # Step 1: Let us see whether we have some outliers we would prefer to remove.
 
+
 # Determine the columns we want to experiment on.
-outlier_columns = ['acc_phone_x']
+outlier_columns = ['mag_phone_z']
+
+                   # 'gyr_phone_x', 'gyr_phone_y', 'gyr_phone_z',
+                   # 'mag_phone_x', 'mag_phone_y', 'mag_phone_z']
+
 
 # Create the outlier classes.
 OutlierDistr = DistributionBasedOutlierDetection()

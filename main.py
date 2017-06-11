@@ -1,3 +1,4 @@
+
 # from pandas import scatter_matrix
 # from pandas.io.parsers import read_csv
 # from rpy2.robjects import r, pandas2ri
@@ -13,14 +14,14 @@
 # from matplotlib import interactive
 #
 #
-# import matplotlib.pyplot as plt
+
 # import rpy2.robjects as robjects
 # # import pandas.rpy.common as com
 from pprint import pprint
 
-import pandas as pd
+
 # import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plot
 # import seaborn as sns
 # import sklearn.cluster as cluster
 # import time
@@ -37,67 +38,17 @@ from PythonCode.Chapter2.CreateDataset import CreateDataset
 from PythonCode.util import util
 from PythonCode.util.VisualizeDataset import VisualizeDataset
 
+import pandas as pd
 
 mypath = '../Data/mobile/'
 
 print("main")
-
+# plot.ion()
 result_dataset_path = './intermediate_datafiles/'
 
-# data = pd.read_csv( result_dataset_path + 'mydata_chapter2_result.csv')
 
-# data = pd.read_csv( result_dataset_path + 'chapter3_result_final.csv')
 
-from scipy.stats import shapiro
-import numpy as np
-import pylab
-import scipy.stats as stats
 
-# normaltest(data['acc_phone_x'])
-# shapiro(data['acc_phone_x'])
-
-# plt.subplot(3,3,1)
-# plt.title('acc_phone_x')
-# stats.probplot(data['acc_phone_x'], dist="norm", plot=pylab)
-#
-# # pylab.show()
-#
-# plt.subplot(3,3,2)
-# plt.title('acc_phone_y')
-# stats.probplot(data['acc_phone_y'], dist="norm", plot=pylab)
-# # pylab.show()
-#
-# plt.subplot(3,3,3)
-# plt.title('acc_phone_z')
-# stats.probplot(data['acc_phone_z'], dist="norm", plot=pylab)
-# # pylab.show()
-#
-# plt.subplot(3,3,4)
-# plt.title('gyr_phone_xss')
-# stats.probplot(data['gyr_phone_x'], dist="norm", plot=pylab)
-# # pylab.show()
-#
-# plt.subplot(3,3,5)
-# stats.probplot(data['gyr_phone_y'], dist="norm", plot=pylab)
-# # pylab.show()
-#
-# plt.subplot(3,3,6)
-# stats.probplot(data['gyr_phone_z'], dist="norm", plot=pylab)
-# # pylab.show()
-#
-# plt.subplot(3,3,7)
-# stats.probplot(data['mag_phone_x'], dist="norm", plot=pylab)
-# # pylab.show()
-#
-# plt.subplot(3,3,8)
-# stats.probplot(data['mag_phone_y'], dist="norm", plot=pylab)
-# # pylab.show()
-#
-# plt.subplot(3,3,9)
-# stats.probplot(data['mag_phone_z'], dist="norm", plot=pylab)
-# pylab.show()
-#
-# exit(0)
 
 # crowdsignals_data = pd.read_csv('../Data/csv-participant-one/labels.csv')
 # df = pd.DataFrame()
@@ -287,9 +238,9 @@ for milliseconds_per_instance in granularities:
     # ['acc_', 'gyr_', 'hr_watch_rate', 'light_phone_lux', 'mag_',  '   press_phone_', 'label'],
     # ['like', 'like', 'like',          'like', 'like',              'like',     'like',         'like'],
     # ['line', 'line', 'line',          'line', 'line',              'line',     'points',       'points'])
-    DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'mag_phone_', 'press_phone_', 'label'],
-                         ['like', 'like', 'like', 'like', 'like'],
-                         ['line', 'line', 'line', 'line', 'points'])
+    # DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'mag_phone_', 'press_phone_', 'label'],
+    #                      ['like', 'like', 'like', 'like', 'like'],
+    #                      ['line', 'line', 'line', 'line', 'points'])
     # DataViz.plot_dataset(dataset, ['acc_', 'gyr_', 'mag_phone_', 'press_phone_'],
     #                      ['like', 'like', 'like', 'like'],
     #                      ['line', 'line', 'line', 'line'])
@@ -303,4 +254,4 @@ for milliseconds_per_instance in granularities:
 # util.print_latex_table_statistics_two_datasets(datasets[0], datasets[1])
 
 # Finally, store the last dataset we have generated (250 ms).
-dataset.to_csv(result_dataset_path + 'mydata_chapter2_result.csv')
+# dataset.to_csv(result_dataset_path + 'mydata_chapter2_result.csv')
