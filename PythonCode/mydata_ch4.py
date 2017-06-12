@@ -35,7 +35,7 @@ milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds/1
 # Chapter 4: Identifying aggregate attributes.
 
 # First we focus on the time domain.
-
+print("doing time domain")
 # Set the window sizes to the number of instances representing 5 seconds, 30 seconds and 5 minutes
 window_sizes = [int(float(5000)/milliseconds_per_instance), int(float(0.5*60000)/milliseconds_per_instance), int(float(5*60000)/milliseconds_per_instance)]
 
@@ -45,7 +45,7 @@ for ws in window_sizes:
     dataset_copy = NumAbs.abstract_numerical(dataset_copy, ['acc_phone_x'], ws, 'mean')
     dataset_copy = NumAbs.abstract_numerical(dataset_copy, ['acc_phone_x'], ws, 'std')
 
-DataViz.plot_dataset(dataset_copy, ['acc_phone_x', 'acc_phone_x_temp_mean', 'acc_phone_x_temp_std', 'label'], ['exact', 'like', 'like', 'like'], ['line', 'line', 'line', 'points'])
+# DataViz.plot_dataset(dataset_copy, ['acc_phone_x', 'acc_phone_x_temp_mean', 'acc_phone_x_temp_std', 'label'], ['exact', 'like', 'like', 'like'], ['line', 'line', 'line', 'points'])
 
 ws = int(float(0.5*60000)/milliseconds_per_instance)
 selected_predictor_cols = [c for c in dataset.columns if not 'label' in c]
@@ -55,9 +55,9 @@ dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'std')
 
 CatAbs = CategoricalAbstraction()
 dataset = CatAbs.abstract_categorical(dataset, ['label'], ['like'], 0.03, int(float(5*60000)/milliseconds_per_instance), 2)
-
+print("finished time domain")
 # Now we move to the frequency domain, with the same window size.
-
+print("doing freq domain")
 FreqAbs = FourierTransformation()
 fs = float(1000)/milliseconds_per_instance
 
@@ -67,12 +67,12 @@ data_table = FreqAbs.abstract_frequency(copy.deepcopy(dataset), ['acc_phone_x'],
 
 # Spectral analysis.
 
-DataViz.plot_dataset(data_table, ['acc_phone_x_max_freq', 'acc_phone_x_freq_weighted', 'acc_phone_x_pse', 'label'], ['like', 'like', 'like', 'like'], ['line', 'line', 'line','points'])
+# DataViz.plot_dataset(data_table, ['acc_phone_x_max_freq', 'acc_phone_x_freq_weighted', 'acc_phone_x_pse', 'label'], ['like', 'like', 'like', 'like'], ['line', 'line', 'line','points'])
 
 dataset = FreqAbs.abstract_frequency(dataset, periodic_predictor_cols, int(float(10000)/milliseconds_per_instance), fs)
 
 # Now we only take a certain percentage of overlap in the windows, otherwise our training examples will be too much alike.
-
+print("finished frq domain")
 # The percentage of overlap we allow
 window_overlap = 0.9
 skip_points = int((1-window_overlap) * ws)

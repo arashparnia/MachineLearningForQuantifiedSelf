@@ -5,62 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be935c6-011a-4bb1-b00c-0747a6f8b391" name="Default" comment="ass 1 done">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch4.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch5.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accx-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accx-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accx-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accx-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accy-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accy-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accy-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accy-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accz-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accz-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-accz-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-final.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyrx-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyrx-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyrx-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyry-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyry-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyry-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyrz-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyrz-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyrz-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-gyrz-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-lowpas-accx.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-lowpass-accy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-lowpass-accz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magx-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magx-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magx-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magx-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magy-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magy-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magy-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magy-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magz-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magz-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magz-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-magz-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-pca.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/ch3-principal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/crowd_250.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/crowd_250_sitting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/crowd_60000.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/crowd_6000_sitting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/crowd_walking.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/model_imputation_heartrate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/mydata_250.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/mydata_250_sitting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/mydata_60000.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/mydata_walking.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Graphs/normality.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graphs/assignment2/ch5_kmeans_clustering_gyr.png" afterPath="$PROJECT_DIR$/Graphs/assignment2/ch5_kmeans_clustering_gyr.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/mydata_ch3_rest.py" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch3_rest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/util/VisualizeDataset.py" afterPath="$PROJECT_DIR$/PythonCode/util/VisualizeDataset.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/mydata_ch4.py" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch4.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,8 +27,8 @@
     <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$crowdsignals_ch2.coverage" NAME="crowdsignals_ch2 Coverage Results" MODIFIED="1496922935779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$imputing.coverage" NAME="imputing Coverage Results" MODIFIED="1497129709218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$crowdsignals_ch4.coverage" NAME="crowdsignals_ch4 Coverage Results" MODIFIED="1497020513991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$mydata_ch4.coverage" NAME="mydata_ch4 Coverage Results" MODIFIED="1497259876010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$crowdsignals_ch5.coverage" NAME="crowdsignals_ch5 Coverage Results" MODIFIED="1497259469947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch4.coverage" NAME="mydata_ch4 Coverage Results" MODIFIED="1497262867452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$crowdsignals_ch5.coverage" NAME="crowdsignals_ch5 Coverage Results" MODIFIED="1497261390957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$Main.coverage" NAME="Main Coverage Results" MODIFIED="1496754864457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$crowdsignals_ch3_outliers.coverage" NAME="crowdsignals_ch3_outliers Coverage Results" MODIFIED="1497017204592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$main.coverage" NAME="main Coverage Results" MODIFIED="1496924843143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -100,31 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crowdsignals_ch3_outliers.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py">
+      <file leaf-file-name="crowdsignals_ch5.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="-265">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crowdsignals_ch4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="76" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mydata_ch4.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mydata_ch4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="-70">
+              <caret line="45" column="86" lean-forward="true" selection-start-line="45" selection-start-column="86" selection-end-line="45" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -161,10 +99,10 @@
         <option value="$PROJECT_DIR$/mydata_normality.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/PythonCode/util/VisualizeDataset.py" />
-        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
         <option value="$PROJECT_DIR$/PythonCode/mydata_ch3_rest.py" />
-        <option value="$PROJECT_DIR$/PythonCode/mydata_ch4.py" />
         <option value="$PROJECT_DIR$/PythonCode/mydata_ch5.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
+        <option value="$PROJECT_DIR$/PythonCode/mydata_ch4.py" />
       </list>
     </option>
   </component>
@@ -578,8 +516,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.mydata_ch4" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mydata_ch3_rest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.crowdsignals_ch5" />
+        <item index="1" class="java.lang.String" itemvalue="Python.crowdsignals_ch5" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mydata_ch3_rest" />
         <item index="3" class="java.lang.String" itemvalue="Python.mydata_normality" />
         <item index="4" class="java.lang.String" itemvalue="Python.mydata_ch2" />
       </list>
@@ -671,13 +609,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26068377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -970,14 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -993,14 +922,6 @@
           <folding>
             <element signature="e#0#16#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermediate_datafiles/mydata_chapter3_result_outliers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,10 +949,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch4.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="395">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermediate_datafiles/mydata_chapter3_result_outliers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/gensim/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="1014" column="0" lean-forward="false" selection-start-line="1014" selection-start-column="0" selection-end-line="1014" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1044,10 +989,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="-70">
+          <caret line="45" column="86" lean-forward="true" selection-start-line="45" selection-start-column="86" selection-end-line="45" selection-end-column="86" />
           <folding />
         </state>
       </provider>
