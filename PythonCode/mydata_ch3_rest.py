@@ -114,4 +114,4 @@ DataViz.plot_dataset(dataset, ['acc_', 'gyr_',  'mag_', 'press_phone_', 'label']
 
 # Store the outcome.
 
-dataset.to_csv(dataset_path + 'chapter3_result_final.csv')
+dataset.to_csv(dataset_path + 'mydata_chapter3_result_final.csv')

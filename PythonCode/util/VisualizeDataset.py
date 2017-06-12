@@ -6,7 +6,7 @@ import matplotlib.dates as md
 import matplotlib.pyplot as plot
 import numpy as np
 from scipy.cluster.hierarchy import dendrogram
-
+from mpl_toolkits.mplot3d import axes3d, Axes3D #<-- Note the capitalization!
 
 class VisualizeDataset:
 
@@ -154,7 +154,8 @@ class VisualizeDataset:
             labels.extend([name for name in list(data_table.columns) if label_cols[i] == name[0:len(label_cols[i])]])
 
         fig = plot.figure()
-        ax = fig.add_subplot(111, projection='3d')
+        # ax = fig.add_subplot(111, projection='3d')
+        ax = Axes3D(fig)  # <-- Note the difference from your original code...
         handles = []
 
         # Plot clusters individually with a certain color.
