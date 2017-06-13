@@ -144,7 +144,7 @@ class VisualizeDataset:
 
         color_index = 0
         point_displays = ['+', 'x', '*', 'd', 'o', 's', '<', '>']
-
+        # point_displays = ['+', 'x', '*', 'd']
         # Determine the number of clusters:
         clusters = data_table[cluster_col].unique()
         labels = []
@@ -178,7 +178,7 @@ class VisualizeDataset:
                 ax.set_zlabel(data_cols[2])
                 marker_index += 1
             color_index += 1
-
+        # print(handles)
         plot.legend(handles, labels, fontsize='xx-small', numpoints=1)
         plot.hold(False)
         plot.show()

@@ -305,7 +305,7 @@ class HierarchicalClustering:
         if (not use_prev_linkage) or (self.link is None):
             # Perform the clustering process according to the specified distance metric.
             if distance_metric == df.minkowski:
-                self.link = linkage(temp_dataset.as_matrix(), method=link_function, metric='minkowski', p=p)
+                self.link = linkage(temp_dataset.as_matrix(), method=link_function, metric='minkowski')
             elif distance_metric == df.manhattan:
                 self.link = linkage(temp_dataset.as_matrix(), method=link_function, metric='manhattan')
             else:

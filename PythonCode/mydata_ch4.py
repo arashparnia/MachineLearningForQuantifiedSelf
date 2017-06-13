@@ -56,6 +56,8 @@ dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'std')
 CatAbs = CategoricalAbstraction()
 dataset = CatAbs.abstract_categorical(dataset, ['label'], ['like'], 0.03, int(float(5*60000)/milliseconds_per_instance), 2)
 print("finished time domain")
+
+
 # Now we move to the frequency domain, with the same window size.
 print("doing freq domain")
 FreqAbs = FourierTransformation()

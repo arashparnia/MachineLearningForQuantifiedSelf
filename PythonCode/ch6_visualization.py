@@ -30,6 +30,7 @@ df = pd.DataFrame(columns=['x', 'y'])
 x = np.random.normal(0, 0.5, 100)
 df['x'] = x
 y = 2.5 * x + 3
+# y = 2.5 * x + 3
 df['y'] = y
 
 a = np.arange(0, 5, 0.1)
