@@ -38,7 +38,7 @@ class PrepareDatasetForLearning:
         for i in range(0, len(dataset.index)):
             # If we have exactly one true class column, we can assign that value,
             # otherwise we keep the default class.
-            if sum_values.ix[i,:] == 1:
+            if sum_values.ix[i,:] == 1: # this was commented out so we can have duplicate time stamps with different labels
                 dataset.ix[i, self.class_col] = dataset.ix[i, labels].idxmax(axis=1)
         # And remove our old binary columns.
         dataset = dataset.drop(labels, axis=1)
