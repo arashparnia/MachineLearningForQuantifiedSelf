@@ -32,10 +32,12 @@ milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds/1
 # Step 2: Let us impute the missing values.
 
 MisVal = ImputationMissingValues()
-imputed_mean_dataset = MisVal.impute_mean(copy.deepcopy(dataset), 'acc_phone_x')
-imputed_median_dataset = MisVal.impute_median(copy.deepcopy(dataset), 'acc_phone_x')
-imputed_interpolation_dataset = MisVal.impute_interpolate(copy.deepcopy(dataset), 'acc_phone_x')
-DataViz.plot_imputed_values(dataset, ['original', 'mean', 'interpolation'], 'acc_phone_x', imputed_mean_dataset['acc_phone_x'], imputed_interpolation_dataset['acc_phone_x'])
+# imputed_mean_dataset = MisVal.impute_mean(copy.deepcopy(dataset), 'acc_phone_x')
+# imputed_median_dataset = MisVal.impute_median(copy.deepcopy(dataset), 'acc_phone_x')
+# imputed_interpolation_dataset = MisVal.impute_interpolate(copy.deepcopy(dataset), 'acc_phone_x')
+# DataViz.plot_imputed_values(dataset, ['original', 'mean', 'interpolation'], 'acc_phone_x', imputed_mean_dataset['acc_phone_x'], imputed_interpolation_dataset['acc_phone_x'])
+
+
 
 # And we impute for all columns except for the label in the selected way (interpolation)
 
@@ -61,17 +63,17 @@ LowPass = LowPassFilter()
 fs = float(1000)/milliseconds_per_instance
 cutoff = 1.5
 
-# Let us study acc_phone_x:
-new_dataset = LowPass.low_pass_filter(copy.deepcopy(dataset), 'acc_phone_x', fs, cutoff, order=10)
-DataViz.plot_dataset(new_dataset.ix[int(0.4*len(new_dataset.index)):int(0.43*len(new_dataset.index)), :], ['acc_phone_x', 'acc_phone_x_lowpass'], ['exact','exact'], ['line', 'line'])
-
-# Let us study acc_phone_y:
-new_dataset = LowPass.low_pass_filter(copy.deepcopy(dataset), 'acc_phone_y', fs, cutoff, order=10)
-DataViz.plot_dataset(new_dataset.ix[int(0.4*len(new_dataset.index)):int(0.43*len(new_dataset.index)), :], ['acc_phone_y', 'acc_phone_y_lowpass'], ['exact','exact'], ['line', 'line'])
-
-# Let us study acc_phone_z:
-new_dataset = LowPass.low_pass_filter(copy.deepcopy(dataset), 'acc_phone_z', fs, cutoff, order=10)
-DataViz.plot_dataset(new_dataset.ix[int(0.4*len(new_dataset.index)):int(0.43*len(new_dataset.index)), :], ['acc_phone_z', 'acc_phone_z_lowpass'], ['exact','exact'], ['line', 'line'])
+# # Let us study acc_phone_x:
+# new_dataset = LowPass.low_pass_filter(copy.deepcopy(dataset), 'acc_phone_x', fs, cutoff, order=10)
+# DataViz.plot_dataset(new_dataset.ix[int(0.4*len(new_dataset.index)):int(0.43*len(new_dataset.index)), :], ['acc_phone_x', 'acc_phone_x_lowpass'], ['exact','exact'], ['line', 'line'])
+#
+# # Let us study acc_phone_y:
+# new_dataset = LowPass.low_pass_filter(copy.deepcopy(dataset), 'acc_phone_y', fs, cutoff, order=10)
+# DataViz.plot_dataset(new_dataset.ix[int(0.4*len(new_dataset.index)):int(0.43*len(new_dataset.index)), :], ['acc_phone_y', 'acc_phone_y_lowpass'], ['exact','exact'], ['line', 'line'])
+#
+# # Let us study acc_phone_z:
+# new_dataset = LowPass.low_pass_filter(copy.deepcopy(dataset), 'acc_phone_z', fs, cutoff, order=10)
+# DataViz.plot_dataset(new_dataset.ix[int(0.4*len(new_dataset.index)):int(0.43*len(new_dataset.index)), :], ['acc_phone_z', 'acc_phone_z_lowpass'], ['exact','exact'], ['line', 'line'])
 
 
 # And not let us include all measurements that have a form of periodicity (and filter them):
@@ -100,7 +102,7 @@ plot.show(block=False)
 
 # We select 7 as the best number of PC's as this explains most of the variance
 
-n_pcs = 7
+n_pcs = 4
 
 dataset = PCA.apply_pca(copy.deepcopy(dataset), selected_predictor_cols, n_pcs)
 

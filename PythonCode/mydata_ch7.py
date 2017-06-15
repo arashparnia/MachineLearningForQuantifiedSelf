@@ -55,8 +55,8 @@ print 'Test set length is: ', len(test_X.index)
 
 # Select subsets of the features that we will consider:
 
-basic_features = ['acc_phone_x','acc_phone_y','acc_phone_z','gyr_phone_x','gyr_phone_y','gyr_phone_z','mag_phone_x','mag_phone_y','mag_phone_z','press_phone_pressure']
-pca_features = ['pca_1','pca_2','pca_3','pca_4','pca_5','pca_6','pca_7']
+basic_features = ['acc_phone_x','acc_phone_y','acc_phone_z','gyr_phone_x','gyr_phone_y','gyr_phone_z','mag_phone_x','mag_phone_y','mag_phone_z','press_phone_Pressure']
+pca_features = ['pca_1','pca_2','pca_3','pca_4']
 time_features = [name for name in dataset.columns if '_temp_' in name]
 freq_features = [name for name in dataset.columns if (('_freq' in name) or ('_pse' in name))]
 print '#basic features: ', len(basic_features)
@@ -72,24 +72,24 @@ features_after_chapter_5 = list(set().union(basic_features, pca_features, time_f
 
 # First, let us consider the performance over a selection of features:
 
-# fs = FeatureSelectionClassification()
-#
-# features, ordered_features, ordered_scores = fs.forward_selection(10, train_X[features_after_chapter_5], train_y)
-# print ordered_scores
-# print ordered_features
-#
-# plot.plot(range(1, 11), ordered_scores)
-# plot.xlabel('number of features')
-# plot.ylabel('accuracy')
-# plot.show()
-#
-# # Based on the plot we select the top 10 features.
-# exit(0)
+fs = FeatureSelectionClassification()
+
+features, ordered_features, ordered_scores = fs.forward_selection(10, train_X[features_after_chapter_5], train_y)
+print ordered_scores
+print ordered_features
+
+plot.plot(range(1, 11), ordered_scores)
+plot.xlabel('number of features')
+plot.ylabel('accuracy')
+plot.show()
+
+# Based on the plot we select the top 10 features.
+exit(0)
 # selected_features = ['acc_phone_y_freq_0.0_Hz_ws_40', 'press_phone_pressure_temp_mean_ws_120', 'gyr_phone_x_temp_std_ws_120',
 #                      'mag_watch_y_pse', 'mag_phone_z_max_freq', 'gyr_watch_y_freq_weighted', 'gyr_phone_y_freq_1.0_Hz_ws_40',
 #                      'acc_phone_x_freq_1.9_Hz_ws_40', 'mag_watch_z_freq_0.9_Hz_ws_40', 'acc_watch_y_freq_0.5_Hz_ws_40']
-selected_features =  ['0.1_temp_mean_ws_120', 'acc_phone_x_freq_0.6_Hz_ws_40', 'gyr_phone_x_freq_0.5_Hz_ws_40', 'gyr_phone_x_freq_1.7_Hz_ws_40', 'gyr_phone_z_freq_1.0_Hz_ws_40', 'mag_phone_z_freq_0.8_Hz_ws_40', 'acc_phone_x_freq_1.8_Hz_ws_40', 'gyr_phone_y_freq_1.0_Hz_ws_40', 'acc_phone_x_freq_1.9_Hz_ws_40', 'gyr_phone_y_freq_1.1_Hz_ws_40']
-#
+selected_features =  []
+
 # # Let us first study the impact of regularization and model complexity: does regularization prevent overfitting?
 #
 learner = ClassificationAlgorithms()
