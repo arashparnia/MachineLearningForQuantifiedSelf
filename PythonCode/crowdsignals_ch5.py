@@ -105,8 +105,8 @@ silhouette_values = []
 # Do some initial runs to determine the right number for the maximum number of clusters.
 
 print '===== agglomaritive clustering ====='
-for k in k_values:
-    print 'k = ', k
+# for k in k_values:
+#     print 'k = ', k
 
     # linkage
     # single
@@ -118,15 +118,16 @@ for k in k_values:
     # ward
 
     # dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset), ['gyr_phone_x', 'gyr_phone_y', 'gyr_phone_z'], 5, 'euclidean', use_prev_linkage=True, link_function='ward')
-    dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset), ['acc_phone_x', 'acc_phone_y', 'acc_phone_z'], 5, 'minkowski', use_prev_linkage=True, link_function='single')
+    # dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset), ['acc_phone_x', 'acc_phone_y', 'acc_phone_z'], 5, 'minkowski', use_prev_linkage=True, link_function='single')
 
-    silhouette_score = dataset_cluster['silhouette'].mean()
-    print 'silhouette = ', silhouette_score
-    silhouette_values.append(silhouette_score)
-    if k == k_values[0]:
-        DataViz.plot_dendrogram(dataset_cluster, l)
+    # silhouette_score = dataset_cluster['silhouette'].mean()
+    # print 'silhouette = ', silhouette_score
+    # silhouette_values.append(silhouette_score)
+    # if k == k_values[0]:
+    #     DataViz.plot_dendrogram(dataset_cluster, l)
 
 
+    #
 # plot.plot(k_values, silhouette_values, 'b-')
 # plot.ylim([0,1])
 # plot.xlabel('max number of clusters')
@@ -136,3 +137,9 @@ for k in k_values:
 # And we select the outcome dataset of the knn clustering....
 
 # dataset_knn.to_csv(dataset_path + 'chapter5_result.csv')
+dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset),
+                                                                  ['acc_phone_x', 'acc_phone_y', 'acc_phone_z'], 5,
+                                                                  'minkowski', use_prev_linkage=True,
+                                                                  link_function='complete')
+
+util.print_latex_statistics_clusters(dataset_cluster, 'cluster', ['gyr_phone_x', 'gyr_phone_y', 'gyr_phone_z'],'label')

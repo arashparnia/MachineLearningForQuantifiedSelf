@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be935c6-011a-4bb1-b00c-0747a6f8b391" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intermediate_datafiles/chapter5_result.csv" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch7_backward.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch7_forward.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch7_regression.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/mydata_ch3_outliers.py" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch3_outliers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/mydata_ch3_rest.py" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch3_rest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/mydata_ch5.py" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch5.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonCode/mydata_ch7.py" afterPath="$PROJECT_DIR$/PythonCode/mydata_ch7.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter2_result.csv" afterPath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter2_result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter3_result_final.csv" afterPath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter3_result_final.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter4_result.csv" afterPath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter4_result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter5_result.csv" afterPath="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter5_result.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,46 +22,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Python$mydata_normality.coverage" NAME="mydata_normality Coverage Results" MODIFIED="1497215295341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$mydata_ch6.coverage" NAME="mydata_ch6 Coverage Results" MODIFIED="1497464024161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$mydata_ch3_rest.coverage" NAME="mydata_ch3_rest Coverage Results" MODIFIED="1497516329517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$mydata_ch3_outliers.coverage" NAME="mydata_ch3_outliers Coverage Results" MODIFIED="1497516134905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$main.coverage" NAME="main Coverage Results" MODIFIED="1497212598545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$mydata_ch5.coverage" NAME="mydata_ch5 Coverage Results" MODIFIED="1497519387806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$crowdsignals_ch3_rest.coverage" NAME="crowdsignals_ch3_rest Coverage Results" MODIFIED="1497020240715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$mydata_ch2.coverage" NAME="mydata_ch2 Coverage Results" MODIFIED="1497165026457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$ch6_visualization.coverage" NAME="ch6_visualization Coverage Results" MODIFIED="1497347170807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$crowdsignals_ch2.coverage" NAME="crowdsignals_ch2 Coverage Results" MODIFIED="1496922935779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$imputing.coverage" NAME="imputing Coverage Results" MODIFIED="1497129709218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch7_regression.coverage" NAME="mydata_ch7_regression Coverage Results" MODIFIED="1497523652337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$crowdsignals_ch4.coverage" NAME="crowdsignals_ch4 Coverage Results" MODIFIED="1497020513991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch7_backward.coverage" NAME="mydata_ch7_backward Coverage Results" MODIFIED="1497602283209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$crowdsignals_ch7_classification.coverage" NAME="crowdsignals_ch7_classification Coverage Results" MODIFIED="1497465430480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$mydata_ch4.coverage" NAME="mydata_ch4 Coverage Results" MODIFIED="1497516470108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$crowdsignals_ch5.coverage" NAME="crowdsignals_ch5 Coverage Results" MODIFIED="1497289553627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$Main.coverage" NAME="Main Coverage Results" MODIFIED="1496754864457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$crowdsignals_ch3_outliers.coverage" NAME="crowdsignals_ch3_outliers Coverage Results" MODIFIED="1497017204592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$main.coverage" NAME="main Coverage Results" MODIFIED="1496924843143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_normality.coverage" NAME="mydata_normality Coverage Results" MODIFIED="1497215295341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch3_outliers.coverage" NAME="mydata_ch3_outliers Coverage Results" MODIFIED="1497516134905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$main.coverage" NAME="main Coverage Results" MODIFIED="1497212598545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch7_forward.coverage" NAME="mydata_ch7_forward Coverage Results" MODIFIED="1497554241993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch5.coverage" NAME="mydata_ch5 Coverage Results" MODIFIED="1497538006698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$crowdsignals_ch3_rest.coverage" NAME="crowdsignals_ch3_rest Coverage Results" MODIFIED="1497020240715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch2.coverage" NAME="mydata_ch2 Coverage Results" MODIFIED="1497165026457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$crowdsignals_ch2.coverage" NAME="crowdsignals_ch2 Coverage Results" MODIFIED="1496922935779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$imputing.coverage" NAME="imputing Coverage Results" MODIFIED="1497129709218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch4.coverage" NAME="mydata_ch4 Coverage Results" MODIFIED="1497516470108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$crowdsignals_ch5.coverage" NAME="crowdsignals_ch5 Coverage Results" MODIFIED="1497540663474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$FeatureSelection.coverage" NAME="FeatureSelection Coverage Results" MODIFIED="1497602273707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MachineLearningForQuantifiedSelf$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1496831746243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
-    <SUITE FILE_PATH="coverage/Python$mydata_ch7.coverage" NAME="mydata_ch7 Coverage Results" MODIFIED="1497519509475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$mydata_ch7.coverage" NAME="mydata_ch7 Coverage Results" MODIFIED="1497558674372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$crowdsignals_ch2.coverage" NAME="crowdsignals_ch2 Coverage Results" MODIFIED="1497016917029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mydata_ch7.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch7.py">
+      <file leaf-file-name="mydata_ch7_backward.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch7_backward.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="570">
+              <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+              <folding>
+                <element signature="e#505#514#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrepareDatasetForLearning.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
+      <file leaf-file-name="crowdsignals_ch8_regression.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state relative-caret-position="2308">
+              <caret line="170" column="48" lean-forward="false" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -109,7 +113,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/PythonCode/util/VisualizeDataset.py" />
         <option value="$PROJECT_DIR$/PythonCode/Chapter5/Clustering.py" />
-        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
         <option value="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter3_result_outliers.csv" />
         <option value="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter4_result.csv" />
         <option value="$PROJECT_DIR$/PythonCode/ch6_visualization.py" />
@@ -122,8 +125,14 @@
         <option value="$PROJECT_DIR$/PythonCode/mydata_ch3_outliers.py" />
         <option value="$PROJECT_DIR$/PythonCode/mydata_ch3_rest.py" />
         <option value="$PROJECT_DIR$/intermediate_datafiles/mydata_chapter3_result_final.csv" />
+        <option value="$PROJECT_DIR$/PythonCode/mydata_ch7_regression.py" />
+        <option value="$PROJECT_DIR$/PythonCode/mydata_ch7_forwars.py" />
+        <option value="$PROJECT_DIR$/PythonCode/mydata_ch7_backward.py" />
         <option value="$PROJECT_DIR$/PythonCode/mydata_ch5.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
         <option value="$PROJECT_DIR$/PythonCode/mydata_ch7.py" />
+        <option value="$PROJECT_DIR$/PythonCode/mydata_ch7_forward.py" />
+        <option value="$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py" />
       </list>
     </option>
   </component>
@@ -240,26 +249,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mydata_ch7">
-    <configuration default="false" name="mydata_ch4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MachineLearningForQuantifiedSelf" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/mydata_ch4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.mydata_ch7_backward">
     <configuration default="false" name="mydata_ch7" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,7 +269,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="mydata_ch3_outliers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="mydata_ch7_forward" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -292,13 +282,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MachineLearningForQuantifiedSelf" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/mydata_ch3_outliers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/mydata_ch7_forward.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="mydata_ch3_rest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="mydata_ch7_backward" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -311,13 +301,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MachineLearningForQuantifiedSelf" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/mydata_ch3_rest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/mydata_ch7_backward.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="mydata_ch5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="crowdsignals_ch5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -330,7 +320,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MachineLearningForQuantifiedSelf" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/mydata_ch5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FeatureSelection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MachineLearningForQuantifiedSelf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -542,19 +551,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
       <item index="1" class="java.lang.String" itemvalue="Python.Unnamed" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mydata_ch4" />
-      <item index="3" class="java.lang.String" itemvalue="Python.mydata_ch7" />
-      <item index="4" class="java.lang.String" itemvalue="Python.mydata_ch3_outliers" />
-      <item index="5" class="java.lang.String" itemvalue="Python.mydata_ch3_rest" />
-      <item index="6" class="java.lang.String" itemvalue="Python.mydata_ch5" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mydata_ch7" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mydata_ch7_forward" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mydata_ch7_backward" />
+      <item index="5" class="java.lang.String" itemvalue="Python.crowdsignals_ch5" />
+      <item index="6" class="java.lang.String" itemvalue="Python.FeatureSelection" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mydata_ch7" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mydata_ch5" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mydata_ch4" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mydata_ch3_rest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.mydata_ch3_outliers" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mydata_ch7_backward" />
+        <item index="1" class="java.lang.String" itemvalue="Python.FeatureSelection" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mydata_ch7" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mydata_ch7_forward" />
+        <item index="4" class="java.lang.String" itemvalue="Python.crowdsignals_ch5" />
       </list>
     </recent_temporary>
   </component>
@@ -646,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497514289775</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ch7 in progress">
+      <created>1497520330946</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1497520330946</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -657,7 +673,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26373628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -687,35 +703,14 @@
     <MESSAGE value="chapter 2 code part 1 working" />
     <MESSAGE value="chapter 3 code part 3 working" />
     <MESSAGE value="ass 1 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="ass 1 done" />
+    <MESSAGE value="ch7 in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch7 in progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PythonCode/fancyimpute/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/ch3_visualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermediate_datafiles/mydata_chapter2_result1.csv" />
-    <entry file="file://$PROJECT_DIR$/mydata_comparing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mydata_normality.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -842,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="116" column="12" lean-forward="false" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Graphs/assignment1/mydata_250.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -897,33 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-653">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermediate_datafiles/chapter5_result.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="575">
-          <caret line="4" column="899" lean-forward="false" selection-start-line="4" selection-start-column="899" selection-end-line="4" selection-end-column="899" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1016,30 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2198">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermediate_datafiles/mydata_chapter5_result.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2043">
-          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -1048,10 +989,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="50" column="55" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermediate_datafiles/chapter5_result.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="15">
+          <caret line="0" column="171" lean-forward="false" selection-start-line="0" selection-start-column="159" selection-end-line="0" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermediate_datafiles/mydata_chapter5_result.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch7_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3570">
+          <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding>
+            <element signature="e#505#514#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2902">
+          <caret line="234" column="1" lean-forward="true" selection-start-line="233" selection-start-column="2" selection-end-line="234" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch7_forward.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+          <folding>
+            <element signature="e#505#514#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="222">
+          <caret line="178" column="25" lean-forward="true" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
+          <folding>
+            <element signature="e#505#514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#505#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/mydata_ch7_backward.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+          <folding>
+            <element signature="e#505#514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2308">
+          <caret line="170" column="48" lean-forward="false" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="48" />
           <folding />
         </state>
       </provider>

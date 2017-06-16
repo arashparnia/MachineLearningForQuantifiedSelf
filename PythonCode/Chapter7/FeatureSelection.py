@@ -68,11 +68,13 @@ class FeatureSelectionClassification:
     # that show the best accuracy. We assume a decision tree learning for this purpose, but
     # this can easily be changed. It return the best features.
     def backward_selection(self, max_features, X_train, y_train):
+        k=0
+        l=0
         # First select all features.
         selected_features = X_train.columns.tolist()
         ca = ClassificationAlgorithms()
         ce = ClassificationEvaluation()
-        for i in range(0, (len(X_train.columns) - max_features)):
+        for i in  range(0,1): #range(0, (len(X_train.columns) - max_features)):
             best_perf = 0
             worst_feature = ''
 
@@ -80,7 +82,8 @@ class FeatureSelectionClassification:
             for f in selected_features:
                 temp_selected_features = copy.deepcopy(selected_features)
                 temp_selected_features.remove(f)
-
+                k = k+1
+                print ('removing feature ' + str(k))
                 # Determine the score without the feature.
                 pred_y_train, pred_y_test, prob_training_y, prob_test_y = ca.decision_tree(X_train[temp_selected_features], y_train, X_train[temp_selected_features])
                 perf = ce.accuracy(y_train, pred_y_train)
@@ -92,6 +95,10 @@ class FeatureSelectionClassification:
                     worst_feature = f
 
             # Remove the worst feature.
+            l=1+1
+            k=0
+            print ('Remove the worst feature ' + str(l))
+            # print ('removing feature')
             selected_features.remove(worst_feature)
         return selected_features
 
