@@ -60,19 +60,30 @@ class TemporalClassificationAlgorithms:
     # This function initializes an echo state network given the specified number of
     # inputs, outputs, and nodes in the reservoir. It returns the weight matrices W_in,
     # W, and W_back.
-    def initialize_echo_state_network(self, inputs, outputs, reservoir):
+    def initialize_echo_state_network(self, inputs, outputs, reservoir,sr = 1.25):
 
         # http://minds.jacobs-university.de/mantas/code
         # Create random matrices.
+        # print (reservoir)
+
         Win = (np.random.rand(reservoir,1+inputs)-0.5) * 1
         W = np.random.rand(reservoir,reservoir)-0.5
         Wback = (np.random.rand(reservoir,outputs)-0.5) * 1
 
         # Adjust W to "guarantee" the echo state property.
+        #  Spectral Radius computation
         rhoW = max(abs(linalg.eig(W)[0]))
-        W *= 1.25 / rhoW
+        W *= sr / rhoW # increase improves
         return Win, W, Wback
 
+    # Option
+    # 2 - normalizing and setting
+    # spectral
+    # radius(correct, slow):
+    # print 'Computing spectral radius...',
+    # rhoW = max(abs(linalg.eig(W)[0]))
+    # print 'done.'
+    # W *= 1.25 / rhoW
     # Predict the values of an echo state network given the matrices Win, W, Wback, Wout, the setting for a,
     # the reservoir size, and the dataset (which potentially includes the target as well). The cols are
     # the relevant columns of X. Finally, per_time_step=True means that we feed to correct output back into
@@ -139,7 +150,7 @@ class TemporalClassificationAlgorithms:
             return combinations
 
     def gridsearch_reservoir_computing(self, train_X, train_y, test_X, test_y, per_time_step=False, error = 'mse', gridsearch_training_frac=0.7):
-        tuned_parameters = {'a': [0.6, 0.8], 'reservoir_size':[400, 700, 1000]}
+        tuned_parameters = {'a': [0.6, 0.8], 'reservoir_size':[100,400, 700, 1000], 'washout_period':[5,10,15,20],'sr':[0.25,1.25,2.25,3.25]}
 #        tuned_parameters = {'a': [0.4], 'reservoir_size':[250]}
         params = tuned_parameters.keys()
         combinations = self.generate_parameter_combinations(tuned_parameters, params)
@@ -160,7 +171,7 @@ class TemporalClassificationAlgorithms:
             # Order of the keys might have changed.
             keys = tuned_parameters.keys()
             pred_train_y, pred_test_y, pred_train_y_prob, pred_test_y_prob = self.reservoir_computing(train_params_X, train_params_y, test_params_X, test_params_y,
-                                                                                                     reservoir_size=comb[keys.index('reservoir_size')], a=comb[keys.index('a')], per_time_step=per_time_step,
+                                                                                                     reservoir_size=comb[keys.index('reservoir_size')], a=comb[keys.index('a')],washout_period=comb[keys.index('washout_period')],sr=comb[keys.index('sr')] ,per_time_step=per_time_step,
                                                                                                      gridsearch=False)
 
             if error == 'mse':
@@ -179,7 +190,7 @@ class TemporalClassificationAlgorithms:
         print '-------'
         print best_combination
         print '-------'
-        return best_combination[keys.index('reservoir_size')], best_combination[keys.index('a')]
+        return best_combination[keys.index('reservoir_size')], best_combination[keys.index('a')] , best_combination[keys.index('washout_period')], best_combination[keys.index('sr')]
 
     def normalize(self, train, test, range_min, range_max):
 
@@ -207,14 +218,14 @@ class TemporalClassificationAlgorithms:
     # and use the created network to predict the outcome for both the
     # test and training set. It returns the categorical predictions for the training and test set as well as the
     # probabilities associated with each class, each class being represented as a column in the data frame.
-    def reservoir_computing(self, train_X, train_y, test_X, test_y, reservoir_size=100, a=0.8, per_time_step=False, gridsearch=True, gridsearch_training_frac=0.7, error='accuracy'):
+    def reservoir_computing(self, train_X, train_y, test_X, test_y, reservoir_size=100, a=0.8,washout_period=10, sr=1.25,per_time_step=False, gridsearch=True, gridsearch_training_frac=0.7, error='accuracy'):
         # Inspired by http://minds.jacobs-university.de/mantas/code
 
         if gridsearch:
-            reservoir_size, a = self.gridsearch_reservoir_computing(train_X, train_y, test_X, test_y, per_time_step=per_time_step, gridsearch_training_frac=gridsearch_training_frac, error=error)
+            reservoir_size, a,washout_period,sr = self.gridsearch_reservoir_computing(train_X, train_y, test_X, test_y, per_time_step=per_time_step, gridsearch_training_frac=gridsearch_training_frac, error=error)
 
         # We assume these parameters as fixed, but feel free to change them as well.
-        washout_period = 10
+        # washout_period = 10
 
         # Create a numerical dataset without categorical attributes.
         new_train_X, new_test_X = self.create_numerical_multiple_dataset(train_X, test_X)
@@ -232,7 +243,7 @@ class TemporalClassificationAlgorithms:
         outputs = len(new_train_y.columns)
 
         # Randomly initialize our weight vectors.
-        Win, W, Wback = self.initialize_echo_state_network(inputs, outputs, reservoir_size)
+        Win, W, Wback = self.initialize_echo_state_network(inputs, outputs, reservoir_size,sr)
 
 
         # Allocate memory for our result matrices.

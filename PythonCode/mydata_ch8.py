@@ -17,7 +17,7 @@ from Chapter7.PrepareDatasetForLearning import PrepareDatasetForLearning
 from Chapter8.LearningAlgorithmsTemporal import TemporalRegressionAlgorithms
 from util import util
 from util.VisualizeDataset import VisualizeDataset
-
+import matplotlib.dates as md
 # Of course we repeat some stuff from Chapter 3, namely to load the dataset
 
 DataViz = VisualizeDataset()
@@ -77,8 +77,8 @@ selected_features =  ['pca_1_temp_mean_ws_120', 'press_phone_Pressure_temp_mean_
 #                      'gyr_watch_x_pse']
 # possible_feature_sets = [features_after_chapter_5]
 # feature_names = ['Chapter 5']
-possible_feature_sets = [basic_features, features_after_chapter_5, selected_features]
-feature_names = ['initial set', 'Chapter 5', 'Selected features']
+# possible_feature_sets = [basic_features, features_after_chapter_5, selected_features]
+# feature_names = ['initial set', 'Chapter 5', 'Selected features']
 
 # Let us first study whether the time series is stationary and what the autocorrelations are.
 
@@ -180,11 +180,12 @@ scores_over_all_algs = []
 #
 # # DataViz.plot_performances_regression(['Reservoir', 'RNN', 'Time series'], feature_names, scores_over_all_algs)
 
-regr_train_y, regr_test_y = learner.reservoir_computing(train_X[features_after_chapter_5], train_y, test_X[features_after_chapter_5], test_y, gridsearch=False)
+regr_train_y, regr_test_y = learner.reservoir_computing(train_X[features_after_chapter_3], train_y, test_X[features_after_chapter_3], test_y, gridsearch=True)
 DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['gyr_phone_x'], test_X.index, test_y, regr_test_y['gyr_phone_x'], 'gyr_phone_x rate')
+
 
 # regr_train_y, regr_test_y = learner.recurrent_neural_network(train_X[basic_features], train_y, test_X[basic_features], test_y, gridsearch=False)
 # DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['gyr_phone_x'], test_X.index, test_y, regr_test_y['gyr_phone_x'], 'gyr_phone_x rate')
 #
-# regr_train_y, regr_test_y = learner.time_series(train_X[basic_features], train_y, test_X[features_after_chapter_5], test_y, gridsearch=True)
+# regr_train_y, regr_test_y = learner.time_series(train_X[basic_features], train_y, test_X[features_after_chapter_5], test_y, gridsearch=False)
 # DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['gyr_phone_x'], test_X.index, test_y, regr_test_y['gyr_phone_x'], 'gyr_phone_x rate')
