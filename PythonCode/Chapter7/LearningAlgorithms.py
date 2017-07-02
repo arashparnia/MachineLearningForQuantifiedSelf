@@ -232,10 +232,10 @@ class ClassificationAlgorithms:
     def random_forest(self, train_X, train_y, test_X, n_estimators=10, min_samples_leaf=5, criterion='gini', print_model_details=False, gridsearch=True):
 
         if gridsearch:
-            tuned_parameters = [{'min_samples_leaf': [2, 10, 50, 100, 200],
-                                 'n_estimators':[10, 50, 100],
+            tuned_parameters = [{'min_samples_leaf': [2,5, 10,20, 50, 100, 200,500],
+                                 'n_estimators':[10, 50, 100,500],
                                  'criterion':['gini', 'entropy']}]
-            rf = GridSearchCV(RandomForestClassifier(), tuned_parameters, cv=5, scoring='accuracy')
+            rf = GridSearchCV(RandomForestClassifier(), tuned_parameters, cv=10, scoring='accuracy')
         else:
             rf = RandomForestClassifier(n_estimators=n_estimators, min_samples_leaf=min_samples_leaf, criterion=criterion)
 

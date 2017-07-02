@@ -66,9 +66,64 @@ class VisualizeDataset:
         plot.xlabel('time')
         plot.show()
 
+    def plot_dataset_save(self, data_table, columns, match='like', display='line',name = 'fig'):
+        names = list(data_table.columns)
+
+        # Create subplots if more columns are specified.
+        if len(columns) > 1:
+            f, xar = plot.subplots(len(columns), sharex=True, sharey=False)
+        else:
+            f, xar = plot.subplots()
+            xar = [xar]
+
+        f.subplots_adjust(hspace=0.4)
+        plot.hold(True)
+        xfmt = md.DateFormatter('%H:%M')
+
+        # Pass through the columns specified.
+        for i in range(0, len(columns)):
+            xar[i].xaxis.set_major_formatter(xfmt)
+            # We can match exact (i.e. a columns name is an exact name of a columns or 'like' for
+            # which we need to find columns names in the dataset that contain the name.
+            if match[i] == 'exact':
+                relevant_dataset_cols = [columns[i]]
+            elif match[i] == 'like':
+                relevant_dataset_cols = [name for name in names if columns[i] == name[0:len(columns[i])]]
+            else:
+                raise ValueError("Match should be 'exact' or 'like' for " + str(i) + ".")
+
+            max_values = []
+            min_values = []
+            # Pass through the relevant columns.
+            for j in range(0, len(relevant_dataset_cols)):
+                # Create a mask to ignore the NaN values when plotting:
+                mask = data_table[relevant_dataset_cols[j]].notnull()
+                max_values.append(data_table[relevant_dataset_cols[j]][mask].max())
+                min_values.append(data_table[relevant_dataset_cols[j]][mask].min())
+
+                # Display point, or as a line
+                if display[i] == 'points':
+                    xar[i].plot(data_table.index[mask], data_table[relevant_dataset_cols[j]][mask],
+                                self.point_displays[j % len(self.point_displays)])
+                else:
+                    xar[i].plot(data_table.index[mask], data_table[relevant_dataset_cols[j]][mask],
+                                self.line_displays[j % len(self.line_displays)])
+            xar[i].tick_params(axis='y', labelsize=10)
+            xar[i].legend(relevant_dataset_cols, fontsize='xx-small', numpoints=1, loc='upper center',
+                          bbox_to_anchor=(0.5, 1.3), ncol=len(relevant_dataset_cols), fancybox=True, shadow=True)
+            xar[i].set_ylim([min(min_values) - 0.1 * (max(max_values) - min(min_values)),
+                             max(max_values) + 0.1 * (max(max_values) - min(min_values))])
+        # Make sure we get a nice figure with only a single x-axis and labels there.
+        plot.setp([a.get_xticklabels() for a in f.axes[:-1]], visible=False)
+        plot.xlabel('time')
+        plot.savefig(name)
+        # plot.show()
+        plot.close()
+
+
     def plot_dataset_boxplot(self, dataset, cols):
         ax = dataset[cols].plot.box()
-        ax.set_ylim(-30,30)
+        ax.set_ylim(-5,5)
         plot.show()
 
     # This function plots the real and imaginary amplitudes of the frequencies found in the Fourier transformation.

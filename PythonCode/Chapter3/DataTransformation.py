@@ -25,9 +25,9 @@ class LowPassFilter:
         cut = cutoff_frequency / nyq
         b, a = butter(order, cut, btype='low', analog=False)
         if phase_shift:
-            data_table[col + '_lowpass'] = filtfilt(b, a, data_table[col])
+            data_table['lowpass_' + col + '_'+ str(int(cutoff_frequency*10))] = filtfilt(b, a, data_table[col])
         else:
-            data_table[col + '_lowpass'] = lfilter(b, a, data_table[col])
+            data_table['lowpass_' + col + '_'+ str(int(cutoff_frequency*10))] = lfilter(b, a, data_table[col])
         return data_table
 
 # Class for Principal Component Analysis. We can only apply this when we do not have missing values (i.e. NaN).

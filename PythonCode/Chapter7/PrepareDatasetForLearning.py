@@ -52,6 +52,65 @@ class PrepareDatasetForLearning:
     # training_frac of the data for training and the last 1-training_frac for testing. Otherwise, we select points randomly.
     # We return a training set, the labels of the training set, and the same for a test set. We can set the random seed
     # to make the split reproducible.
+    def split_single_dataset_classification_temporal(self, df, class_labels, matching, training_frac, filter=True, random_state=0):
+        # Create a single class column if we have the 'like' option.
+
+        if matching == 'like':
+            dataset = self.assign_label(df, class_labels)
+            class_labels = self.class_col
+        elif len(class_labels) == 1:
+            class_labels = class_labels[0]
+
+
+
+        training_sets_X = []
+        test_sets_X = []
+        training_sets_y = []
+        test_sets_y = []
+        labels = ['labelstanding', 'labelindoor', 'labelstone', 'labelgrass', 'labelsand', 'labeltable']
+        for l in labels:
+            dataset = df.loc[df[l] == 1]
+
+            # Filer NaN is desired and those for which we cannot determine the class should be removed.
+            if filter:
+                dataset = dataset.dropna()
+                dataset = dataset[dataset['class'] != self.default_label]
+            # The features are the ones not in the class label.
+            features = [x for x in dataset.columns if x not in class_labels]
+
+            X = dataset.ix[:, features]
+            y = dataset.ix[:, class_labels]
+
+            # length = int(len(dataset.index) * training_frac)
+
+            # print(len(X.index))
+            # print(len(y.index))
+            # np.array_split(df, 3)
+
+
+            training_set_X , test_set_X =  np.array_split(X, 2)
+
+            training_set_y , test_set_y =  np.array_split(y, 2)
+
+
+            # training_set_X, test_set_X, training_set_y, test_set_y = train_test_split(dataset.ix[:, features],
+            #                                                                           dataset.ix[:, class_labels],
+            #                                                                               test_size=(1 - training_frac),
+            #                                                                               stratify=dataset.ix[:, class_labels],
+            #                                                                               random_state=random_state)
+
+            training_sets_X.append(training_set_X)
+            test_sets_X.append(test_set_X)
+            training_sets_y.append(training_set_y)
+            test_sets_y.append(test_set_y)
+
+        training_set_X = pd.concat(training_sets_X,axis=0)
+        test_set_X = pd.concat(test_sets_X,axis=0)
+        training_set_y = pd.concat(training_sets_y,axis=0)
+        test_set_y =  pd.concat(test_sets_y,axis=0)
+
+        return training_set_X, test_set_X, training_set_y, test_set_y
+
     def split_single_dataset_classification(self, dataset, class_labels, matching, training_frac, filter=True, temporal=False, random_state=0):
         # Create a single class column if we have the 'like' option.
         if matching == 'like':
